@@ -1,0 +1,37 @@
+@media (max-width: 60em) {
+  html {
+    font-size: 57%;
+  }
+  button {
+    font-size: 2rem;
+    padding: 1.4rem 1.4rem;
+  }
+  main {
+    flex-direction: column;
+  }
+  .first-column {
+    width: 100%;
+  }
+  .second-column {
+    width: 100%;
+    padding: 2rem 2rem;
+  }
+}
+@media (max-width: 50em) {
+  html {
+    font-size: 49%;
+  }
+  form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 31.25em) {
+  html {
+    font-size: 40%;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 3rem;
+  }
+}

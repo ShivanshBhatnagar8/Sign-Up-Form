@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --color-black-transparent: rgba(0, 0, 0, 0.7);
+  --color-background: #1b1a1a00;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first-column {
+  width: 40%;
+  background-image: url(../img/game-img.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+}
+
+.logo-section {
+  display: flex;
+  background-color: var(--color-black-transparent);
+  justify-content: center;
+  position: relative;
+  gap: 2rem;
+  top: 17rem;
+}
+img {
+  width: 10rem;
+}
+h1 {
+  align-self: center;
+
+  color: #fff;
+  font-size: 4rem;
+}
+.second-column {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: stretch;
+  margin: 0 auto;
+  padding: 1.6rem 2rem;
+  background-color: #100f0f;
+}
+h2 {
+  font-size: 5rem;
+  color: #fff;
+}
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+  font-size: 2rem;
+  padding: 0 3rem;
+  color: #fff;
+}
+label {
+  font-size: 2rem;
+}
+input {
+  border-radius: 2rem;
+  padding: 1.4rem;
+  display: block;
+  border: none;
+  transition: all 0.2s;
+}
+input:focus {
+  outline: none;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+input:valid {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem rgb(98, 4, 138);
+}
+
+button {
+  align-self: flex-start;
+  margin-top: 4rem;
+  padding: 2rem 2rem;
+  border: 4px solid rgb(98, 4, 138);
+  background-color: #b80cf1;
+  border-radius: 2rem;
+  font-size: 2.4rem;
+}
+button:hover {
+  background-color: black;
+  color: #b80cf1;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+p {
+  font-size: 2.2rem;
+  color: #fff;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 1rem;
+  color: #fff;
+}
+a:hover {
+  color: #b80cf1;
+}
